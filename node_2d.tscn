@@ -1,0 +1,22 @@
+[gd_scene load_steps=4 format=3 uid="uid://bm26r1nxtgsy7"]
+
+[ext_resource type="Script" path="res://key_info.gd" id="1_0tjpr"]
+[ext_resource type="Script" path="res://score.gd" id="2_ga04g"]
+
+[sub_resource type="Theme" id="Theme_13q1a"]
+default_font_size = 48
+
+[node name="Scene" type="Node2D"]
+
+[node name="score" type="Label" parent="."]
+offset_left = 31.0
+offset_top = 36.0
+offset_right = 231.0
+offset_bottom = 138.0
+theme = SubResource("Theme_13q1a")
+script = ExtResource("2_ga04g")
+
+[node name="key_info" type="Label" parent="."]
+offset_right = 40.0
+offset_bottom = 23.0
+script = ExtResource("1_0tjpr")
