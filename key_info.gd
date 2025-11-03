@@ -7,7 +7,7 @@ var newline = false
 func _process(delta: float) -> void:
 	var _dumb = delta
 	newline = false
-	out = ''
+	out = 'key codes\n'
 	j = 0
 	for i in range(global.keys.size()):
 		if global.keys[i] > 0:

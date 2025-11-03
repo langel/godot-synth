@@ -11,8 +11,8 @@ extends Node
 func _process(_delta):
 	buffer_size.text = "buffer size\n%.3f" % global.buffer_size
 	sample_rate.text = "sample rate\n" + str(global.sample_rate)
-	note_values1.text = ''
-	note_values2.text = ''
+	note_values1.text = 'channels\n'
+	note_values2.text = '\n'
 	for i in range(global.channel_max):
 		if (i % 2) == 0:
 			if main.channels[i].enabled:
