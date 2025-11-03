@@ -3,8 +3,12 @@ extends Node2D
 var playback: AudioStreamPlayback = null
 var sample_hz: float 
 var phase = 0.0
+var channels: Array[channel] = []
 
 func _ready():
+	channels.resize(16)
+	for i in range(channels.size()):
+		channels[i] = channel.new()
 	sample_hz = $player.stream.mix_rate
 	global.sample_rate = int(sample_hz)
 	$player.stream.buffer_length = 0.05

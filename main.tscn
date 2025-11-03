@@ -1,8 +1,7 @@
-[gd_scene load_steps=6 format=3 uid="uid://bm26r1nxtgsy7"]
+[gd_scene load_steps=5 format=3 uid="uid://bm26r1nxtgsy7"]
 
 [ext_resource type="Script" path="res://main.gd" id="1_rjbk2"]
 [ext_resource type="Theme" uid="uid://bhqrdxfjqcxck" path="res://theme.tres" id="2_8fhpj"]
-[ext_resource type="Script" path="res://score.gd" id="5_lbgf8"]
 [ext_resource type="Script" path="res://key_info.gd" id="6_0dw5u"]
 
 [sub_resource type="AudioStreamGenerator" id="AudioStreamGenerator_e7nvt"]
@@ -28,14 +27,6 @@ offset_top = 495.0
 offset_right = 1117.0
 offset_bottom = 627.0
 theme = ExtResource("2_8fhpj")
-
-[node name="score" type="Label" parent="."]
-offset_left = 728.0
-offset_top = 332.0
-offset_right = 928.0
-offset_bottom = 434.0
-theme = ExtResource("2_8fhpj")
-script = ExtResource("5_lbgf8")
 
 [node name="key_info" type="Label" parent="."]
 offset_left = 431.0
