@@ -8,8 +8,8 @@ var sample = 0.0
 
 func turn_on(pitch:float):
 	enabled = true
-	frequency = pitch
-	increment = (420.0 - pitch * 3.33) / global.sample_rate
+	frequency = 420.0 - pitch * 3.33
+	increment = frequency / global.sample_rate
 	
 func turn_off():
 	enabled = false
