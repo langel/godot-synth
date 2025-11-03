@@ -3,9 +3,6 @@ extends Node
 var score = 0
 var keys : PackedInt32Array
 
-func _ready() -> void:
-	keys.resize(256)
-	keys.fill(0)
 
 func _input(ev):
 	if ev is InputEventKey:
@@ -14,3 +11,8 @@ func _input(ev):
 			keys[key] += 1	
 		else:
 			keys[key] = 0
+
+func _ready():
+	keys.resize(256)
+	keys.fill(0)
+	
