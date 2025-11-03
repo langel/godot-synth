@@ -1,0 +1,58 @@
+[gd_scene load_steps=6 format=3 uid="uid://bm26r1nxtgsy7"]
+
+[ext_resource type="Script" path="res://main.gd" id="1_rjbk2"]
+[ext_resource type="Theme" uid="uid://bhqrdxfjqcxck" path="res://theme.tres" id="2_8fhpj"]
+[ext_resource type="Script" path="res://score.gd" id="5_lbgf8"]
+[ext_resource type="Script" path="res://key_info.gd" id="6_0dw5u"]
+
+[sub_resource type="AudioStreamGenerator" id="AudioStreamGenerator_e7nvt"]
+
+[node name="main" type="Node2D"]
+script = ExtResource("1_rjbk2")
+
+[node name="player" type="AudioStreamPlayer" parent="."]
+stream = SubResource("AudioStreamGenerator_e7nvt")
+volume_db = -9.369
+autoplay = true
+
+[node name="buffer_size" type="Label" parent="."]
+offset_left = 400.0
+offset_top = 527.0
+offset_right = 608.0
+offset_bottom = 641.0
+theme = ExtResource("2_8fhpj")
+
+[node name="sample_rate" type="Label" parent="."]
+offset_left = 673.0
+offset_top = 495.0
+offset_right = 1117.0
+offset_bottom = 627.0
+theme = ExtResource("2_8fhpj")
+
+[node name="score" type="Label" parent="."]
+offset_left = 728.0
+offset_top = 332.0
+offset_right = 928.0
+offset_bottom = 434.0
+theme = ExtResource("2_8fhpj")
+script = ExtResource("5_lbgf8")
+
+[node name="key_info" type="Label" parent="."]
+offset_left = 431.0
+offset_top = 4.0
+offset_right = 1152.0
+offset_bottom = 251.0
+theme = ExtResource("2_8fhpj")
+script = ExtResource("6_0dw5u")
+
+[node name="note_values1" type="Label" parent="."]
+offset_right = 177.0
+offset_bottom = 644.0
+theme = ExtResource("2_8fhpj")
+
+[node name="note_values2" type="Label" parent="."]
+offset_left = 204.0
+offset_top = 2.0
+offset_right = 381.0
+offset_bottom = 646.0
+theme = ExtResource("2_8fhpj")
